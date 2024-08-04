@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo {
+  color: black;
+  font-size: 32px;
+}
+header {
+  border: solid;
+  text-align: left;
+  padding: 32px;
+}
+.all {
+  margin-top: 30px;
+  display: flex;
+}
+.aside {
+  border: solid;
+
+  width: 300px;
+  min-width: 300px;
+  padding: 20px;
+  max-height: 1900px;
+}
+.as {
+  text-align: center;
+  font-size: 24px;
+}
+.main {
+  border: solid;
+
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+.color-wrapper {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.brand-wrapper {
+  padding-top: 10px;
+}
+.brand-wrapper input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+h3 {
+  padding-top: 20px;
+}
+.btn {
+  margin-top: 20px;
+  margin-left: 80px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: white;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.product-card {
+  max-width: 250px;
+  border: 1px solid;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.product-card p {
+  padding-top: 10px;
+}
+.product-card div {
+  padding-top: 10px;
+}
+.product-card h4 {
+  padding-top: 10px;
+}
+
+img {
+  display: block;
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+}
