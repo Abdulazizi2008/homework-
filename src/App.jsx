@@ -29,10 +29,12 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
+  const [selectPrice, setSelectPrice] = useState("");
+
   return (
     <Context.Provider value={{ state, dispatch }}>
       <div className="container">
-        <Heder />
+        <Heder selectPrice={selectPrice} setSelectPrice={setSelectPrice} />
         <div className="all">
           <Aside
             selectedBrand={selectedBrand}
@@ -40,7 +42,11 @@ function App() {
             selectedColor={selectedColor}
             setSelectedColor={setSelectedColor}
           />
-          <Main selectedBrand={selectedBrand} selectedColor={selectedColor} />
+          <Main
+            selectedBrand={selectedBrand}
+            selectedColor={selectedColor}
+            selectPrice={selectPrice}
+          />
         </div>
       </div>
     </Context.Provider>

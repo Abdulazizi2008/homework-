@@ -55,7 +55,7 @@ function Aside({
       {loading && <div>Loading...</div>}
       <ul className="brand-wrapper">
         {brands.map((brand, index) => (
-          <li key={index}>
+          <li key={brand + index}>
             <input
               type="radio"
               id={brand}
@@ -74,7 +74,7 @@ function Aside({
       <ul className="color-wrapper">
         {colors.map((color, index) => {
           return (
-            <li key={index}>
+            <li key={color + index}>
               <button
                 onClick={() => setSelectedColor(color)}
                 style={{

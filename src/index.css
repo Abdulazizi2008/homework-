@@ -18,6 +18,9 @@ header {
   border: solid;
   text-align: left;
   padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .all {
   margin-top: 30px;
@@ -29,7 +32,7 @@ header {
   width: 300px;
   min-width: 300px;
   padding: 20px;
-  max-height: 1900px;
+  max-height: 2200px;
 }
 .as {
   text-align: center;
